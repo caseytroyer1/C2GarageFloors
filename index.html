@@ -278,21 +278,30 @@
       </div>
     </div>
     <div class="quote-right reveal">
-      <form class="quote-form">
+      <form class="quote-form" action="https://formspree.io/f/mwvjprlr" method="POST">
         <div class="form-row">
-          <input type="text" placeholder="First Name" required>
-          <input type="text" placeholder="Last Name" required>
+          <input type="text" name="First Name" placeholder="First Name" required>
+          <input type="text" name="Last Name" placeholder="Last Name" required>
         </div>
-        <input type="tel" placeholder="Phone Number" required>
-        <input type="email" placeholder="Email Address">
-        <select>
-          <option value="" disabled selected>Type of Service</option>
-          <option>Flake Flooring</option>
-          <option>Metallic Epoxy</option>
-          <option>Concrete Overlay</option>
-          <option>Not Sure — Need Advice</option>
-        </select>
-        <textarea placeholder="Comments"></textarea>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <input type="tel" name="Phone" placeholder="Phone Number" required>
+        <input type="text" name="Address" placeholder="Address">
+        <div class="section-label" style="margin-top:8px; margin-bottom:4px;">Service Interest</div>
+        <div class="check-group">
+          <label><input type="checkbox" name="Service" value="Epoxy Flake Floor"> Epoxy Flake Floor</label>
+          <label><input type="checkbox" name="Service" value="Metallic Epoxy Floor"> Metallic Epoxy Floor</label>
+          <label><input type="checkbox" name="Service" value="Concrete Overlay"> Concrete Overlay</label>
+          <label><input type="checkbox" name="Service" value="Undecided"> Undecided</label>
+        </div>
+        <div class="section-label" style="margin-top:16px; margin-bottom:4px;">Surface Type</div>
+        <div class="check-group">
+          <label><input type="checkbox" name="Surface" value="Garage Floor"> Garage Floor</label>
+          <label><input type="checkbox" name="Surface" value="Patio"> Patio</label>
+          <label><input type="checkbox" name="Surface" value="Basement"> Basement</label>
+          <label><input type="checkbox" name="Surface" value="Other"> Other</label>
+        </div>
+        <input type="text" name="Square Footage" placeholder="Approx. Square Footage">
+        <textarea name="Comments" placeholder="Comments"></textarea>
         <button type="submit" class="btn-primary">Send My Quote Request →</button>
       </form>
     </div>

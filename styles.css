@@ -363,6 +363,20 @@ section { padding: 100px 5%; }
 .quote-form select option { background: var(--dark); color: white; }
 .quote-form textarea { resize: vertical; min-height: 120px; }
 .quote-form .btn-primary { width: 100%; text-align: center; padding: 16px; font-size: 14px; }
+.check-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  margin-bottom: 8px;
+}
+.check-group label {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px; color: rgba(255,255,255,0.65); cursor: pointer;
+}
+.check-group input[type="checkbox"] {
+  width: 16px; height: 16px; accent-color: var(--red);
+  border: none; padding: 0; background: none; flex-shrink: 0;
+}
 
 /* ── FOOTER ── */
 footer {

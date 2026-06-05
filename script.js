@@ -50,9 +50,3 @@ document.querySelectorAll('.service-expand-btn').forEach(btn => {
     }
   });
 });
-
-// ── Quote Form ──
-document.querySelector('.quote-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  window.open('https://docs.google.com/forms/d/e/1FAIpQLSfMvR1zNs_UolW2_5A9qH6h6My1h-8G58hn94s8CTj6aFTfgg/viewform?usp=dialog', '_blank');
-});

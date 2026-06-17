@@ -298,8 +298,8 @@ section { padding: 100px 5%; }
 /* ── RESULTS ── */
 #results { padding: 80px 5%; border-top: 1px solid rgba(255,255,255,0.06); }
 .results-header { margin-bottom: 2rem; }
-.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-.before-after-item { position: relative; overflow: hidden; }
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 1200px; margin: 0 auto; }
+.before-after-item { position: relative; overflow: hidden; aspect-ratio: 4/3; }
 .before-after-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .ba-badge {
   position: absolute; top: 16px; left: 16px;
@@ -313,7 +313,7 @@ section { padding: 100px 5%; }
 .gallery-header { margin-bottom: 56px; }
 .gallery-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto; gap: 6px;
+  grid-auto-rows: 1fr; gap: 6px; max-width: 1200px; margin: 0 auto;
 }
 .gallery-item { overflow: hidden; position: relative; cursor: pointer; aspect-ratio: 4/3; }
 .gallery-item img {
